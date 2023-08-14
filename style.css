@@ -79,10 +79,12 @@ section.container {
 .image2 {
   background: url(assets/b.jpg);
   background-size: cover;
+  background-attachment: fixed;
 }
 .image3 {
   background: url(assets/a.jpg) center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .tittle {
