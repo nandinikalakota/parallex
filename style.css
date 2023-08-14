@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.hero {
+  height: 80vh;
+  position: relative;
+  /* background-color: black; */
+  /* color: white; */
+}
+.hero video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero > div {
+  position: absolute;
+  background: rgba(1, 83, 96, 0.34);
+  top: 30vh;
+  left: 10vw;
+  width: 450px;
+  padding: 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+nav {
+  background-color: black;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+nav > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  padding: 0rem 0;
+}
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  transition: all 2s;
+}
+nav ul li {
+  cursor: pointer;
+}
+nav ul li:hover {
+  color: orangered;
+  /* font-size: 2rem; */
+  transform: scale(1.3);
+  transition: transform 2s;
+}
+section.container {
+  padding: 3rem 0;
+}
+/* .image1, */
+/* .image2, */
+/* .image3 { */
+[class^="image"] {
+  justify-content: center;
+  background-color: red;
+  height: 60vh;
+  align-items: center;
+  display: flex;
+}
+
+.image1 {
+  background: url(assets/a.jpg) center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.image2 {
+  background: url(assets/b.jpg);
+  background-size: cover;
+}
+.image3 {
+  background: url(assets/a.jpg) center;
+  background-size: cover;
+}
+
+.tittle {
+  background-color: rgba(0, 0, 0, 0.256);
+  color: white;
+  font-size: 2rem;
+  padding: 1.4rem 5rem;
+  border-radius: 10px;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+}
+.down {
+  position: absolute;
+  rotate: 90deg;
+  font-size: 2rem;
+  animation: sign 1s infinite;
+  /* display: block; */
+  /* text-align: center; */
+  /* width: 13px; */
+  /* height: 13px; */
+  /* animation: fade_move_down 1s ; */
+}
+@keyframes sign {
+  0% {
+    top: 70vh;
+    left: 50%;
+    /* bottom: 60%; */
+  }
+  /* 75% { */
+  /* top: 60vh; */
+  /* left: 40%; */
+
+  100% {
+    top: 80vh;
+    left: 50%;
+  }
+}
+footer {
+  padding: 2rem;
+  background: black;
+  color: white;
+  text-align: center;
+  margin-top: 3rem;
+}
